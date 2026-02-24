@@ -41,7 +41,11 @@ def get_pet_labels(image_dir):
       List. The list contains for following item:
          index 0 = pet image label (string)
     """
-    results_dic = {}
+    in_files = listdir(image_dir)
+    """ creating list of images files names in image directory """
+
+    results_dic = dict()
+
     # Replace None with the results_dic dictionary that you created with this
     # function
     return results_dic
