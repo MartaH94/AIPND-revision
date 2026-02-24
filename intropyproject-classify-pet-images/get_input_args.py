@@ -41,7 +41,9 @@ def get_input_args():
     """
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("--dir")
+    image_folder = parser.add_argument(
+        "--dir", default="pet_images/", help="path to folder of images")
+    parser.add_argument()
     parser.add_argument()
 
     # Replace None with parser.parse_args() parsed argument collection that
