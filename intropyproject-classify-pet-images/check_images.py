@@ -39,28 +39,12 @@ from print_results import print_results
 
 # Main program function defined below
 def main():
-    # TODO 0: Measures total program runtime by collecting start time
     start_time = time()
-
-    # TODO 1: Define get_input_args function within the file get_input_args.py
-    # This function retrieves 3 Command Line Arugments from user as input from
-    # the user running the program from a terminal window. This function returns
-    # the collection of these command line arguments from the function call as
-    # the variable in_arg
-    # DONE
+    # Measuring total program runtime by collecting start time
     in_arg = get_input_args()
 
     # Function that checks command line arguments using in_arg
     check_command_line_arguments(in_arg)
-
-    # TODO 2: Define get_pet_labels function within the file get_pet_labels.py
-    # Once the get_pet_labels function has been defined replace 'None'
-    # in the function call with in_arg.dir  Once you have done the replacements
-    # your function call should look like this:
-    #             get_pet_labels(in_arg.dir)
-    # This function creates the results dictionary that contains the results,
-    # this dictionary is returned from the function call as the variable results
-    # DONE
 
     results = get_pet_labels(in_arg.dir)
 
@@ -77,7 +61,7 @@ def main():
     # and adds these results to the results dictionary - results
     #
 
-    classify_images(None, results, None)
+    classify_images(in_arg.dir, results, in_arg.arch)
 
     # Function that checks Results Dictionary using results
     check_classifying_images(results)
