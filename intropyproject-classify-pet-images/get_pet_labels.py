@@ -42,22 +42,23 @@ def get_pet_labels(image_dir):
          index 0 = pet image label (string)
     """
     in_files = listdir(image_dir)
-    """ creating list of images files names in image directory """
-
     results_dic = dict()
 
     for idx in range(0, len(in_files), 1):
-        if in_files[idx][0] != ".":
+        filename = in_files[idx].lower()
+
+        if in_files[idx][0] != ".":     # checking if name of the file starts with "."
             pet_label = ""
-            filename = in_files[idx].lower().split("_")
-            for word in filename:
+            words = in_files[idx].split("_")
+
+            for word in words:
                 if word.isalpha():
                     pet_label += word + " "
-                    pet_label = pet_label.strip()
+
+        pet_label = pet_label.strip()
 
         if in_files[idx] not in results_dic:
             results_dic[in_files[idx]] = [pet_label]
-
         else:
             print("** Warning: Duplicate files exist in directory:",
                   in_files[idx])
