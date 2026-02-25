@@ -49,13 +49,13 @@ def get_pet_labels(image_dir):
 
         if in_files[idx][0] != ".":     # checking if name of the file starts with "."
             pet_label = ""
-            words = in_files[idx].split("_")
+            words = filename.split("_")
 
             for word in words:
                 if word.isalpha():
                     pet_label += word + " "
 
-        pet_label = pet_label.strip()
+            pet_label = pet_label.strip()
 
         if in_files[idx] not in results_dic:
             results_dic[in_files[idx]] = [pet_label]
