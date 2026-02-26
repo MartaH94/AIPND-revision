@@ -10,7 +10,7 @@ resnet18 = models.resnet18(pretrained=True)
 alexnet = models.alexnet(pretrained=True)
 vgg16 = models.vgg16(pretrained=True)
 
-models = {'resnet': resnet18, 'alexnet': alexnet, 'vgg': vgg16}
+model_dict = {'resnet': resnet18, 'alexnet': alexnet, 'vgg': vgg16}
 
 # obtain ImageNet labels
 with open('imagenet1000_clsid_to_human.txt') as imagenet_classes_file:
@@ -55,7 +55,7 @@ def classifier(img_path, model_name):
         data = Variable(img_tensor, volatile=True)
 
     # apply model to input
-    model = models[model_name]
+    model = model_dict[model_name]
 
     # puts model in evaluation mode
     # instead of (default)training mode
