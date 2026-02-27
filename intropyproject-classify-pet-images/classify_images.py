@@ -116,4 +116,4 @@ def classify_images(images_dir, results_dic, model):
         # if not found then added to results dictionary as NOT a match(0) using
         # the extend function
         else:
-            pass
+            results_dic[key].extend([model_label, 0])
