@@ -104,3 +104,4 @@ ENV/
 .DS_Store
 
 .github/**
+intropyproject-classify-pet-images/checking_torch_version.py
