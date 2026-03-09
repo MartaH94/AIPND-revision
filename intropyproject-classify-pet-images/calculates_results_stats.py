@@ -149,7 +149,8 @@ def calculates_results_stats(results_dic):
     #           multiplied by 100.0 to provide the percentage.
     #
     # Calculates % correct for matches
-    results_stats_dic['pct_match'] = 0.0
+    results_stats_dic['pct_match'] = results_stats_dic['n_match'] / \
+        results_stats_dic['n_images'] * 100.0
 
     # TODO: 5d. REPLACE zero(0.0) with CODE that calculates the % of correctly
     #           classified dog images. Recall that this can be calculated by
