@@ -1,0 +1,53 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 3 key-value pairs.
+Below are 3 of them:
+ 1 key:          Boston_terrier_01.jpg  label:             boston terrier
+ 2 key:                  Rabbit_01.jpg  label:                     rabbit
+ 3 key:                  street_01.jpg  label:                     street
+
+     MATCH:
+
+         Boston_terrier_01.jpg: 
+Real:             boston terrier   Classifier:    boston bull, boston terrier
+
+                 Rabbit_01.jpg: 
+Real:                     rabbit   Classifier: wood rabbit, cottontail, cottontail rabbit, rabbit
+
+ NOT A MATCH:
+
+                 street_01.jpg: 
+Real:                     street   Classifier:       cab, hack, taxi, taxicab
+
+# Total Images 3 # Matches: 2 # NOT Matches: 1
+
+     MATCH:
+
+         Boston_terrier_01.jpg: 
+Real:             boston terrier   Classifier:    boston bull, boston terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                 Rabbit_01.jpg: 
+Real:                     rabbit   Classifier: wood rabbit, cottontail, cottontail rabbit, rabbit  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                 street_01.jpg: 
+Real:                     street   Classifier:       cab, hack, taxi, taxicab  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 3 # Matches: 2 # NOT Matches: 1
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  3  N Dog Images:  1  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  3  N Dog Images:  1  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+** Total Elapsed Runtime: 0:0:0
