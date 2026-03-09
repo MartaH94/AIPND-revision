@@ -182,4 +182,4 @@ def calculates_results_stats(results_dic):
 
     # TODO 5f. REPLACE None with the results_stats_dic dictionary that you
     # created with this function
-    return None
+    return results_stats_dic
