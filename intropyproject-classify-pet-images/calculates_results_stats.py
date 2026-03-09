@@ -159,7 +159,8 @@ def calculates_results_stats(results_dic):
     #           will need to be multiplied by 100.0 to provide the percentage.
     #
     # Calculates % correct dogs
-    results_stats_dic['pct_correct_dogs'] = 0.0
+    results_stats_dic['pct_correct_dogs'] = results_stats_dic['n_correct_dogs'] / \
+        results_stats_dic['n_dogs_img'] * 100.0
 
     # TODO: 5e. REPLACE zero(0.0) with CODE that calculates the % of correctly
     #           classified breeds of dogs. Recall that this can be calculated
