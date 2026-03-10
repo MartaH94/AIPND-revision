@@ -1,6 +1,6 @@
 Command Line Arguments:
      dir = uploaded_images/ 
-    arch = alexnet 
+    arch = vgg 
  dogfile = dognames.txt
 
 Pet Image Label Dictionary has 3 key-value pairs.
@@ -17,12 +17,12 @@ Real:             boston terrier   Classifier:    boston bull, boston terrier
                  Rabbit_01.jpg: 
 Real:                     rabbit   Classifier: wood rabbit, cottontail, cottontail rabbit, rabbit
 
-                 street_01.jpg: 
-Real:                     street   Classifier: streetcar, tram, tramcar, trolley, trolley car
-
  NOT A MATCH:
 
-# Total Images 3 # Matches: 3 # NOT Matches: 0
+                 street_01.jpg: 
+Real:                     street   Classifier:       cab, hack, taxi, taxicab
+
+# Total Images 3 # Matches: 2 # NOT Matches: 1
 
      MATCH:
 
@@ -34,13 +34,13 @@ PetLabelDog: 1  ClassLabelDog: 1
 Real:                     rabbit   Classifier: wood rabbit, cottontail, cottontail rabbit, rabbit  
 PetLabelDog: 0  ClassLabelDog: 0
 
-                 street_01.jpg: 
-Real:                     street   Classifier: streetcar, tram, tramcar, trolley, trolley car  
-PetLabelDog: 0  ClassLabelDog: 0
-
  NOT A MATCH:
 
-# Total Images 3 # Matches: 3 # NOT Matches: 0
+                 street_01.jpg: 
+Real:                     street   Classifier:       cab, hack, taxi, taxicab  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 3 # Matches: 2 # NOT Matches: 1
 
  ** Statistics from calculates_results_stats() function:
 N Images:  3  N Dog Images:  1  N NotDog Images:  2 
@@ -49,5 +49,16 @@ Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
  ** Check Statistics - calculated from this function as a check:
 N Images:  3  N Dog Images:  1  N NotDog Images:  2 
 Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture VGG ***
+N Images            :   3
+N Dog Images        :   1
+Number of Not-Dog Images: 2
+
+pct_match: 66.66666666666666 %
+pct_correct_dogs: 100.0 %
+pct_correct_breed: 100.0 %
+pct_correct_notdogs: 100.0 %
 
 ** Total Elapsed Runtime: 0:0:0

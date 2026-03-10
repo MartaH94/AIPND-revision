@@ -50,4 +50,15 @@ Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
 N Images:  3  N Dog Images:  1  N NotDog Images:  2 
 Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
 
+
+*** Results Summary for CNN Model Architecture RESNET ***
+N Images            :   3
+N Dog Images        :   1
+Number of Not-Dog Images: 2
+
+pct_match: 100.0 %
+pct_correct_dogs: 100.0 %
+pct_correct_breed: 100.0 %
+pct_correct_notdogs: 100.0 %
+
 ** Total Elapsed Runtime: 0:0:0
