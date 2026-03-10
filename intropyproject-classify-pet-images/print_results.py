@@ -89,7 +89,8 @@ def print_results(results_dic, results_stats_dic, model,
         #           both the key and the value. Remember the value is accessed
         #           by results_stats_dic[key]
         #
-        pass
+        if key.startswith('p'):
+            print(f"{key}: {results_stats_dic[key]} %")
 
     # IF print_incorrect_dogs == True AND there were images incorrectly
     # classified as dogs or vice versa - print out these cases
