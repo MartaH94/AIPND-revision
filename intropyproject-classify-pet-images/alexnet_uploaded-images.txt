@@ -1,0 +1,64 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 3 key-value pairs.
+Below are 3 of them:
+ 1 key:          Boston_terrier_01.jpg  label:             boston terrier
+ 2 key:                  Rabbit_01.jpg  label:                     rabbit
+ 3 key:                  street_01.jpg  label:                     street
+
+     MATCH:
+
+         Boston_terrier_01.jpg: 
+Real:             boston terrier   Classifier:    boston bull, boston terrier
+
+                 Rabbit_01.jpg: 
+Real:                     rabbit   Classifier: wood rabbit, cottontail, cottontail rabbit, rabbit
+
+                 street_01.jpg: 
+Real:                     street   Classifier: streetcar, tram, tramcar, trolley, trolley car
+
+ NOT A MATCH:
+
+# Total Images 3 # Matches: 3 # NOT Matches: 0
+
+     MATCH:
+
+         Boston_terrier_01.jpg: 
+Real:             boston terrier   Classifier:    boston bull, boston terrier  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                 Rabbit_01.jpg: 
+Real:                     rabbit   Classifier: wood rabbit, cottontail, cottontail rabbit, rabbit  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                 street_01.jpg: 
+Real:                     street   Classifier: streetcar, tram, tramcar, trolley, trolley car  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+# Total Images 3 # Matches: 3 # NOT Matches: 0
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  3  N Dog Images:  1  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  3  N Dog Images:  1  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   3
+N Dog Images        :   1
+Number of Not-Dog Images: 2
+
+pct_match: 100.0 %
+pct_correct_dogs: 100.0 %
+pct_correct_breed: 100.0 %
+pct_correct_notdogs: 100.0 %
+
+** Total Elapsed Runtime: 0:0:0
